@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desi Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    color: #38bdf8;
+    margin: 0;
+}
+
+/* NAV LINKS */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.7);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.btn {
+    background: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+/* SECTION */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(56,189,248,0.3);
+}
+
+/* WHY US */
+.why {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.why div {
+    width: 250px;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    margin: 0;
+    padding: 10px;
+}
+
+/* TEAM */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <h2>Desi Cyber Cafe</h2>
+    </div>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>AI Outsourcing & Data Solutions</h1>
+        <p>Helping global companies scale AI with expert teams</p>
+        <a href="#contact" class="btn">Start a Project</a>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>AI Training</h3>
+            <p>High-quality dataset preparation and training.</p>
+        </div>
+        <div class="card">
+            <h3>Data Annotation</h3>
+            <p>Image, text, and video labeling.</p>
+        </div>
+        <div class="card">
+            <h3>AI Evaluation</h3>
+            <p>Performance testing and optimization.</p>
+        </div>
+        <div class="card">
+            <h3>Project Outsourcing</h3>
+            <p>End-to-end freelance project handling.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section>
+    <h2>Why Choose Us</h2>
+    <div class="why">
+        <div>
+            <h3>✔ Skilled Team</h3>
+            <p>Experienced AI workforce</p>
+        </div>
+        <div>
+            <h3>✔ Global Clients</h3>
+            <p>Serving international markets</p>
+        </div>
+        <div>
+            <h3>✔ Fast Delivery</h3>
+            <p>On-time project completion</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Our Work</h2>
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80">
+            <p>AI Data Processing</p>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80">
+            <p>Annotation Project</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TEAM -->
+<section>
+    <h2>Our Team</h2>
+    <div class="team">
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg">
+            <p>Manager</p>
+        </div>
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg">
+            <p>Annotator</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+        <textarea placeholder="Your Message"></textarea><br>
+        <button>Send Message</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Desi Cyber Cafe | AI Outsourcing Company</p>
+</footer>
+
+</body>
+</html>
